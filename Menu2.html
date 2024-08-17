@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SavorStop</title>
+  <link rel="stylesheet" href="Menu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img class="logo" src="img/Gallery/logo.jpg" alt="logo" height="60px">
+            </a>            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.php">Home</a>
+                  </li>
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="Shop.html">SHOP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="About.html">ABOUT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+          <div class="row">
+            <!-- Menu Section -->
+            <div class="col-md-8 menu">
+              <section id="food">
+                <h2>Food</h2>
+                <div class="row">
+                  <!-- Food Item 1 -->
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="item">
+                      <img src="img/Product/MangInasal/foods/MICIR.png" alt="Food Item 1" class="img-fluid">
+                      <div class="details">
+                        <span class="name">Chicken Inasal Regular</span>
+                        <span class="price">₱99.00</span>
+                        <button class="btn btn-dark mt-2" onclick="addToOrder('Chicken Inasal Regular', 99.00)">Add to Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Food Item 2 -->
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="item">
+                      <img src="img/Product/MangInasal/foods/MIPBBQwSV2.png" alt="Food Item 2" class="img-fluid">
+                      <div class="details">
+                        <span class="name">Mang Inasal Pork BBQ with Plain Rice</span>
+                        <span class="price">₱99.00</span>
+                        <button class="btn btn-dark mt-2" onclick="addToOrder('Mang Inasal Pork BBQ with Plain Rice', 99.00)">Add to Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Food Item 3 -->
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="item">
+                      <img src="img/Product/MangInasal/foods/MIPR.png" alt="Food Item 3" class="img-fluid">
+                      <div class="details">
+                        <span class="name">Mang Inasal Palabok Regular</span>
+                        <span class="price">₱75.00</span>
+                        <button class="btn btn-dark mt-2" onclick="addToOrder('JMang Inasal Palabok Regular', 75.00)">Add to Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Food Item 4 -->
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="item">
+                      <img src="img/Product/MangInasal/foods/MIPS.png" alt="Food Item 4" class="img-fluid">
+                      <div class="details">
+                        <span class="name">Mang Inasal Pork Sisig Solo</span>
+                        <span class="price">₱99.00</span>
+                        <button class="btn btn-dark mt-2" onclick="addToOrder('Mang Inasal Pork Sisig Solo', 99.00)">Add to Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Food Item 5 -->
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="item">
+                      <img src="img/Product/MangInasal/foods/MIBS.png" alt="Food Item 5" class="img-fluid">
+                      <div class="details">
+                        <span class="name">>Mang Inasal Bangus Sisig Solo</span>
+                        <span class="price">₱175.00</span>
+                        <button class="btn btn-dark mt-2" onclick="addToOrder('>Mang Inasal Bangus Sisig Solo', 175.00)">Add to Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Food Item 6 -->
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="item">
+                      <img src="img/Product/MangInasal/foods/MIGL.png" alt="Food Item 6" class="img-fluid">
+                      <div class="details">
+                        <span class="name">Mang Inasal Grilled Liempo</span>
+                        <span class="price">₱159.00</span>
+                        <button class="btn btn-dark mt-2" onclick="addToOrder('Mang Inasal Grilled Liempo', 159.00)">Add to Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Food Item 7 -->
+                  <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="item">
+                      <img src="img/Product/MangInasal/foods/MISL.png" alt="Food Item 7" class="img-fluid">
+                      <div class="details">
+                        <span class="name">Mang Inasal Sizzling Liempo</span>
+                        <span class="price">₱175.00</span>
+                        <button class="btn btn-dark mt-2" onclick="addToOrder('Mang Inasal Sizzling Liempo', 175.00)">Add to Order</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </section>
+            </div>
+    
+            <!-- Order Summary Section -->
+            <div class="col-md-4">
+              <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div id="order-items">
+                  <!-- Items will be dynamically added here -->
+                </div>
+                <div class="total">
+                  <h4>Total: ₱<span id="total-price">0.00</span></h4>
+                  <button class="btn btn-success mt-3" onclick="placeOrder()">Place Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <footer>
+        <h1>Countries with SavorStop</h1>
+        <div class="Countries">
+            <p><a href="Index.php">Philippine</a></p>
+            <p><a href="Index.php">Singapore</a></p>
+            <p><a href="Index.php">Thailand</a></p>
+            <p><a href="Index.php">Vietnam</a></p>
+            <p><a href="Index.php">Indonesia</a></p>
+        </div> 
+        <div class="detail">
+            <h1>© SavorStop 2024</h1>
+            <div class="rule">
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="about.html">Contact</a></p>
+                <p><a href="#">Terms of Services</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>
